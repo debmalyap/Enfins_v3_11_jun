@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectionPointDetailActivity">
+
+    <TextView
+        android:id="@+id/textCPDetailHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:background="#fae596"
+        android:gravity="fill_vertical"
+        android:text="Add New Collection Point"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCPDetailHeader"
+        android:stretchColumns="1,2,3">
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/editTextFormationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Formation date"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCollectionDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:hint="Collection Day"
+            android:spinnerMode="dialog" />
+
+    </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:ems="10"
+                android:hint="Pincode"
+                android:inputType="textPersonName" />
+
+    </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+
+            <EditText
+                android:id="@+id/editTextPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:ems="10"
+                android:hint="Place"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:ems="10"
+                android:hint="Mobile No"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spinnerState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:spinnerMode="dialog"/>
+
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:spinnerMode="dialog"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/spinnerMunicipality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:spinnerMode="dialog"/>
+
+            <Spinner
+                android:id="@+id/spinnerWard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:spinnerMode="dialog"/>
+
+            <Spinner
+                android:id="@+id/spinnerBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:spinnerMode="dialog"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/spinnerGramPanchayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:spinnerMode="dialog"/>
+
+            <Spinner
+                android:id="@+id/spinnerVillage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:spinnerMode="dialog"/>
+
+        </TableRow>
+
+    </TableLayout>
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
+        android:text="submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="@+id/textCPDetailHeader" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="288dp"
+        android:onClick="goBack"
+        android:text="back"
+        app:layout_constraintTop_toTopOf="@+id/textCPDetailHeader"
+        tools:layout_editor_absoluteX="7dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+</android.support.constraint.ConstraintLayout>
